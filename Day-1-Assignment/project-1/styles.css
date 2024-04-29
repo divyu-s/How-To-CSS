@@ -1,0 +1,33 @@
+
+*{
+    margin: 0px;
+}
+
+.container{
+    width: 520px;
+    height: 400px;
+    margin: 50px auto 0px auto;
+    padding: 150px 60px 0px 60px;
+    border-radius: 15px;
+    background: #14e893;
+    font-family: sans-serif;
+}
+
+.container-heading{
+    font-size: 50px;
+}
+
+.container-info{
+    margin:30px 0px;
+    font-weight: 600;
+}
+
+button{
+    border: none;
+    background: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: cursive;
+    padding: 12px 35px;
+    border-radius:25px;
+}
