@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+}
+
+.login-container{
+    width: 300px;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 200px;
+}
+
+.welcome-text{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.input{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.login-button{
+    cursor: pointer;
+    width: 70%;
+    padding: 15px 0px;
+    border: 1px solid black;
+    margin: 20px 0px 30px 0px;
+    background: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sign-up-con{
+    color: rgba(102, 99, 99, 0.77);
+}
+
+.sign-up-con u{
+    color: black;
+}
+
+.forget-password{
+    margin: 10px 0px 30px 0px;
+    
+}
+
+.privacy-policy{
+    color: rgba(102, 99, 99, 0.77);
+}
