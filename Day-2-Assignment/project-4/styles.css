@@ -1,0 +1,83 @@
+* {
+    margin: 0px
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+
+.banner-contianer {
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.promoted {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: rgba(158, 153, 153, 0.737);
+    padding: 5px;
+    color: rgba(242, 228, 228, 0.737);
+    border-radius: 5px;
+}
+
+.offer {
+    position: absolute;
+    bottom: 15px;
+    background: rgb(101, 101, 212);
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.timer {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+.res-name {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.cusines {
+    color: rgba(102, 99, 99, 0.77);
+    font-size: 20px;
+}
+
+.divider {
+    border-top: 2px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.max-safety-img {
+    width: 20%;
+}
+
+.footer-text {
+    color: rgba(102, 99, 99, 0.77);
+    font-size: 20px;
+    line-height: 25px;
+}
