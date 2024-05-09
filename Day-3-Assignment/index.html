@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Airbnb | Holiday rentals, cabins, beach houses & more</title>
+  </head>
+  <body>
+    <header>
+      <div class="page-header">
+        <div class="page-header-left cursor-pointer">
+          <img
+            class="airbnb-logo"
+            src="./resources/airbnb.svg"
+            alt="Airbnb Logo"
+          />
+        </div>
+        <div class="page-header-center">
+          <div class="page-header-center-left">
+            <button
+              class="page-header-center-item font-weight-600 cursor-pointer"
+            >
+              Anywhere
+            </button>
+            <div class="page-header-center-divider"></div>
+            <button
+              class="page-header-center-item font-weight-600 cursor-pointer"
+            >
+              Any week
+            </button>
+            <div class="page-header-center-divider"></div>
+            <button
+              class="page-header-center-item color-lightgray font-weight-600 cursor-pointer"
+            >
+              Add guests
+            </button>
+          </div>
+          <div class="page-header-center-right cursor-pointer">
+            <svg
+              class="search-icon-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              fill="white"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="page-header-right">
+          <span class="cursor-pointer">Airbnb your home</span>
+          <svg
+            class="cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-globe"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+            />
+          </svg>
+          <div class="page-header-right-profile-menu cursor-pointer">
+            <svg
+              class="page-header-right-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            <svg
+              class="page-header-right-Profile"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png"
+                alt="Icons Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span class="color-black">Icons</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+                alt="Amazing Views Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span class="white-space-nowrap">Amazing Views</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg"
+                alt="Cabins Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Cabins</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg"
+                alt="Canvas Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Canvas</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+                alt="Amazing Pools Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span class="white-space-nowrap">Amazing Pools</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg"
+                alt="Desing Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Desing</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg"
+                alt="Treehouses Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Treehouses</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+                alt="Farms Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Farms</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg"
+                alt="Golfing Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Golfing</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg"
+                alt="Casties Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Casties</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg"
+                alt="Earth homes"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span class="white-space-nowrap">Earth homes</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
+                alt="Beach Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Beach</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg"
+                alt="Desert Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Desert</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg"
+                alt="Camping Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Camping</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg"
+                alt="Iceland Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Iceland</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg"
+                alt="OMG Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>OMG!</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/89faf9ae-bbbc-4bc4-aecd-cc15bf36cbca.jpg"
+                alt="Domes Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Domes</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg"
+                alt="Lakefront Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Lakefront</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg"
+                alt="Play Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Play</span>
+          </div>
+          <div class="nav-item">
+            <span>
+              <img
+                src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg"
+                alt="Domes Icon"
+                width="24"
+                height="24"
+              />
+            </span>
+            <span>Luxe</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjIzMTk3NDU3MjE4Nzg2NA%3D%3D/original/f4cbe542-3ce0-4c6f-a8f1-d2120c1b2420.jpeg?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4NjI3OTI1MjIxNDQyOA%3D%3D/original/bc989f2d-eca8-4bcf-a9b0-b70b8e685a64.jpeg?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjI0NzUwMDUwMTg2Mzg5MA%3D%3D/original/99417998-fa44-4c75-ae77-287c1468977b.jpeg?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA3NzgxMzcwNzcxOTUzNQ%3D%3D/original/872f434b-9348-4ff1-8c6f-754fdbab4010.jpeg?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTg2NzMzNDc0MDk1Nzg4NA%3D%3D/original/b676fc8d-8250-4df0-a7cb-728b0486e371.jpeg?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjE4NTg5MzIzNjI0NjI2MA%3D%3D/original/e6b26733-2c15-47d9-b097-6968b39bb697.jpeg?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNTQ0NTEyMzEwMTI3NDg1MQ%3D%3D/original/bd73f0f8-9057-4bbc-ad70-1db13eb5c03f.png?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+        <div class="main-container-item">
+          <img
+            class="main-container-item-img"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4MzUyMzk5Mjc3MDU5Nw%3D%3D/original/d62c78db-3c98-46e7-8566-d685d5c689f3.png?im_w=1440&im_q=highq"
+            alt="Icon Image"
+          />
+          <div class="main-container-item-name">Train at X-Mansion</div>
+          <div class="main-container-item-hosted">Hosted by Juilee</div>
+          <div class="main-container-item-cost">
+            <span class="font-weight-600">&#8377;3,267 </span>per guest
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
