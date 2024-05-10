@@ -8,13 +8,24 @@
   </head>
   <body>
     <header>
+      <!--Desktop and tablet header-->
       <div class="page-header">
         <div class="page-header-left cursor-pointer">
-          <img
-            class="airbnb-logo"
-            src="./resources/airbnb.svg"
-            alt="Airbnb Logo"
-          />
+          <picture>
+            <!-- Use this image if the screen is at least 600px wide -->
+            <source
+              srcset="./resources/airbnb.svg"
+              media="(min-width: 1128px)"
+              width="100rem"
+            />
+
+            <!-- Use this image if nothing matches -->
+            <img
+              src="./resources/airbnb-1.svg"
+              alt="Airbnb Logo"
+              width="35rem"
+            />
+          </picture>
         </div>
         <div class="page-header-center">
           <div class="page-header-center-left">
@@ -25,13 +36,13 @@
             </button>
             <div class="page-header-center-divider"></div>
             <button
-              class="page-header-center-item font-weight-600 cursor-pointer"
+              class="page-header-center-item font-weight-600 cursor-pointer white-space-nowrap"
             >
               Any week
             </button>
             <div class="page-header-center-divider"></div>
             <button
-              class="page-header-center-item color-lightgray font-weight-600 cursor-pointer"
+              class="page-header-center-item color-lightgray font-weight-600 cursor-pointer white-space-nowrap"
             >
               Add guests
             </button>
@@ -52,12 +63,13 @@
           </div>
         </div>
         <div class="page-header-right">
-          <span class="cursor-pointer">Airbnb your home</span>
+          <span class="cursor-pointer page-header-right-left white-space-nowrap"
+            >Airbnb your home</span
+          >
           <svg
             class="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
-            height="16"
             fill="currentColor"
             class="bi bi-globe"
             viewBox="0 0 16 16"
@@ -97,7 +109,36 @@
           </div>
         </div>
       </div>
+
+      <!--Mobail header-->
+      <div class="mobail-header">
+        <div class="page-header-mobail">
+          <div class="page-header-mobail-left">
+            <svg
+              class="search-icon-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
+          <div class="page-header-mobail-right">
+            <div class="page-header-mobail-title">Where to?</div>
+            <div>
+              <span class="page-header-mobail-subtitle">Any where</span
+              ><span class="page-header-mobail-subtitle">Any week</span
+              ><span class="page-header-mobail-subtitle">Add guest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="divider"></div>
+
       <nav>
         <div class="nav-container">
           <div class="nav-item">
@@ -323,6 +364,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="main-container">
         <div class="main-container-item">

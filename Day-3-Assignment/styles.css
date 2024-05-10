@@ -5,80 +5,62 @@
     "Helvetica Neue", sans-serif;
 }
 
-html{
+html {
   font-size: 50%;
 }
 
 /** Header CSS **/
 
-header{
+header {
   position: sticky;
-  top:0;
+  top: 0;
   background: white;
 }
 
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5rem;
-}
-
-.page-header-left {
   display: none;
 }
 
-.airbnb-logo {
-  max-width: 100%;
+.mobail-header {
+  padding: 2rem 2rem 0.5rem 2rem;
 }
 
-.page-header-center {
+.page-header-mobail {
   display: flex;
   align-items: center;
-  border: 1px solid #dddddd;
-  border-radius: 2rem;
+  gap: 1.5rem;
+  padding: 1.3rem 2rem;
+  border: 2px solid #dddddd;
+  border-radius: 5rem;
+  box-shadow: 0.1rem 0.1rem 1rem #dddddd;
 }
 
-.page-header-center-item {
-  background: none;
-  border: none;
-  padding: 1rem 1.5rem;
+.page-header-mobail-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  cursor: pointer;
 }
 
-.page-header-center-divider {
-  border-left: 1px solid #dddddd;
-  margin: 0.7rem 0rem;
+.page-header-mobail-subtitle {
+  font-size: 1.7rem;
+  margin-right: 1.2rem;
+  color: rgb(106, 106, 106);
+  cursor: pointer;
 }
-
-.page-header-center-left {
-  display: flex;
-}
-
-.page-header-center-right {
-  padding: 0.5rem;
-  border-radius: 50%;
-  background: rgb(255, 56, 92);
-  margin-right: 1rem;
-  margin-left: -0.5rem;
-}
-
-.page-header-right {
-  display: none;
-}
-
 
 .divider {
-  border-top: 2px solid #dddddd;
+  display: none;
 }
 
 nav {
-  padding: 1rem 5rem;
+  padding: 1.5rem 3rem;
   box-shadow: 0rem 0.2rem 0.2rem #dddddd;
 }
 
 .nav-container {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   overflow-x: scroll;
 }
@@ -92,7 +74,7 @@ nav {
   flex-direction: column;
   gap: 0.3rem;
   align-items: center;
-  font-size: 12px;
+  font-size: 1.45rem;
   font-weight: 600;
   cursor: pointer;
   color: rgb(106, 106, 106);
@@ -105,7 +87,7 @@ nav {
 /**Main CSS **/
 
 main {
-  margin: 1rem 5rem;
+  margin: 1rem 3rem;
 }
 
 .main-container {
@@ -167,41 +149,108 @@ main {
   white-space: nowrap;
 }
 
+@media screen and (min-width: 744px) {
+  /** Header CSS */
 
-@media screen and (min-width:744px) {
-  html{
-    font-size: 70%;
+  .mobail-header {
+    display: none;
   }
 
-  .page-header-left {
-    display: block;
-    width: 6rem;
-  }
- 
-  .page-header-right{
+  .page-header {
     display: block;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    padding: 1.5rem 5rem;
+  }
+
+  .page-header-center {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 5rem;
+    box-shadow: 0.1rem 0.1rem 1rem #dddddd;
+    margin-right: 2.5rem;
+  }
+
+  .page-header-center-left {
+    display: flex;
+  }
+
+  .page-header-center-item {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1.8rem 2.6rem;
+  }
+
+  .page-header-center-divider {
+    border-left: 1px solid #dddddd;
+    margin: 1.5rem 0rem;
+  }
+
+  .page-header-center-right {
+    padding: 0.8rem;
+    border-radius: 50%;
+    background: rgb(255, 56, 92);
+    margin-right: 1rem;
+    margin-left: -1rem;
+  }
+
+  .page-header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .page-header-right-left {
+    font-size: 1.9rem;
+    font-weight: 600;
   }
 
   .page-header-right-profile-menu {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     border: 1px solid #dddddd;
-    border-radius: 2rem;
-    padding: 0.5rem;
+    border-radius: 5rem;
+    padding: 0.8rem;
   }
-  
+
   .page-header-right-profile-menu:hover {
     box-shadow: 0.1rem 0.1rem 1rem #dddddd;
   }
+
+  .divider {
+    display: block;
+    border-top: 1.5px solid #dddddd;
+  }
+
+  nav {
+    padding: 2.5rem 5rem;
+  }
+
+  .nav-container {
+    gap: 4rem;
+  }
+
+  /**Main CSS **/
+
+  main {
+    margin: 1rem 5rem;
+  }
 }
 
-@media screen and (min-width:950px) {
-  html{
-    font-size: 100%;
+@media screen and (min-width: 1140px) {
+  .page-header {
+    padding: 2rem 10rem;
   }
-  
+
+  nav {
+    padding: 2.5rem 10rem;
+  }
+
+  main {
+    margin: 1rem 10rem;
+  }
 }
